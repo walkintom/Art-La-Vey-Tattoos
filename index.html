@@ -393,30 +393,30 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Email</h2>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/xblgjvvl" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" name="name" class="form-control" id="name" required>
                             <div class="form-feedback" id="nameFeedback"></div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" name="email" class="form-control" id="email" required>
                             <div class="form-feedback" id="emailFeedback"></div>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <input type="tel" name="phone" class="form-control" id="phone" required>
                             <div class="form-feedback" id="phoneFeedback"></div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="6" placeholder="Please provide the following information:&#10;Tattoo placement, tattoo size, colour or black and grey" required></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="6" placeholder="Please provide the following information:&#10;Tattoo placement, tattoo size, colour or black and grey" required></textarea>
                             <div class="form-feedback" id="messageFeedback"></div>
                         </div>
                         <div class="mb-3">
                             <label for="dayPreference" class="form-label">Day Preference</label>
-                            <select class="form-select" id="dayPreference" required>
+                            <select class="form-select" name="dayPreference" id="dayPreference" required>
                                 <option selected disabled value></option>
                                 <option value="1">Weekdays</option>
                                 <option value="2">Weekends</option>
@@ -424,7 +424,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Upload Reference Photo</label>
-                            <input class="form-control" type="file" id="formFile">
+                            <input class="form-control" type="file" name="attachment" accept="image/png, image/jpg, image/jpeg" id="formFile">
                         </div>
                         <button type="submit">Send</button>
                         <button type="reset">Reset</button>
