@@ -460,8 +460,8 @@ nav img {
   box-shadow: none;
   opacity: 1;
 }
-#contact form input:file-selector-button {
-  background-color: #35ac41 !important;
+#contact form input::file-selector-button {
+  background-color: #fff !important;
 }
 #contact form input::file-selector-button:hover {
   background-color: #EBC6A3 !important;
