@@ -485,6 +485,20 @@ nav img {
     font-family: 'Tinos', sans-serif;
     color: #28a745;
 }
+@media screen and (max-width: 600px) {
+  #contact form input[type="text"],[type="tel"],[type="email"],[type="file"],[type="submit"] {
+    width: 80%;
+    min-width: 200px;
+  }
+  #contact form textarea {
+    width: 95%;
+    min-width: 200px;
+  }
+  #contact form select {
+    width: 80%;
+    min-width: 200px;
+  }
+}
 
 /* Footer */
 footer div {
