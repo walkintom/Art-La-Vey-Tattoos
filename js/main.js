@@ -93,6 +93,37 @@ $("#prevButton").click(function () {
   sliderInterval = setInterval(autoSlide, interval); // Restart auto-sliding
 });
 
+// Contact Form Validation
+var form = document.getElementById("contactForm");
+async function handleSubmit(event) {
+event.preventDefault();
+var status = document.getElementById("successMessage");
+var data = new FormData(event.target);
+fetch(event.target.action, {
+  method: form.method,
+  body: data,
+  headers: {
+    'Accept': 'application/json'
+}
+}).then(response => {
+  if (response.ok) {
+    status.innerHTML = "Thanks for your submission!";
+    form.reset()
+  } else {
+    response.json().then(data => {
+    if (Object.hasOwn(data, 'errors')) {
+      status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+    } else {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    }
+  })
+}
+}).catch(error => {
+  status.innerHTML = "Oops! There was a problem submitting your form"
+});
+}
+form.addEventListener("submit", handleSubmit)
+
 // Messenger Plugin
 var chatbox = document.getElementById('fb-customer-chat');
 chatbox.setAttribute("page_id", "65996290389");

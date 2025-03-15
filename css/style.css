@@ -387,6 +387,9 @@ nav img {
   background-color: #000;
   color: #fff;
 }
+#contact form input[type="file"] {
+    margin-bottom: 0 !important;
+}
 #contact form input:focus {
     background-color: #000;
     color: #fff;
@@ -469,12 +472,18 @@ nav img {
   width: 100%;
   border: none;
 }
+.form-text {
+    color: #ffffffc6;
+    font-family: 'Tinos', sans-serif;
+    font-style: italic;
+}
 .form-feedback {
   color: #dc3545;
-  margin-top: 0.5rem;
+  margin-top: -15px !important;
 }
 .form-success {
-  color: #28a745;
+    font-family: 'Tinos', sans-serif;
+    color: #28a745;
 }
 
 /* Footer */
