@@ -369,6 +369,10 @@ nav img {
   color: #fff;
   text-align: left;
 }
+#contact a {
+    color: #fff;
+    text-decoration: underline;
+}
 #contact form {
   text-align: left;
   margin-bottom: 30px;
