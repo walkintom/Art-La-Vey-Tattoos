@@ -126,7 +126,7 @@ form.addEventListener("submit", handleSubmit)
 
 // Messenger Plugin
 var chatbox = document.getElementById('fb-customer-chat');
-chatbox.setAttribute("page_id", "65996290389");
+chatbox.setAttribute("page_id", "686759324672307");
 chatbox.setAttribute("attribution", "biz_inbox");
 
 window.fbAsyncInit = function() {
