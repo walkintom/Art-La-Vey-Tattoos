@@ -3,6 +3,8 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@media (prefers-color-scheme: dark) {}
+
 /* Global */
 body, html {
   height: 100%;
@@ -285,8 +287,6 @@ nav img {
   text-align: center;
   padding: 1rem 1rem 2rem;
 }
-@media (prefers-color-scheme: dark) {
-
 .dot {
   width: 10px;
   height: 10px;
@@ -295,7 +295,6 @@ nav img {
   margin: 0 5px;
   cursor: pointer;
   display: flex;
-}
 }
 .dot.active {
   background-color: #EBC6A3;
