@@ -285,6 +285,8 @@ nav img {
   text-align: center;
   padding: 1rem 1rem 2rem;
 }
+@media (prefers-color-scheme: dark) {
+
 .dot {
   width: 10px;
   height: 10px;
@@ -293,6 +295,7 @@ nav img {
   margin: 0 5px;
   cursor: pointer;
   display: flex;
+}
 }
 .dot.active {
   background-color: #EBC6A3;
