@@ -490,6 +490,7 @@ nav img {
 .WhatsApp {
     width: 40%;
     margin-bottom: -20px;
+    border: 1px solid #fff;
 }
 .WhatsApp:hover {
     border: 1px solid #EBC6A3;
