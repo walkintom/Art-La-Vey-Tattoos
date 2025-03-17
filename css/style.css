@@ -490,10 +490,6 @@ nav img {
 .WhatsApp {
     width: 40%;
     margin-bottom: -20px;
-    border: 1px solid #fff;
-}
-.WhatsApp:hover {
-    border: 1px solid #EBC6A3;
 }
 @media screen and (max-width: 600px) {
   #contact form input[type="text"],[type="tel"],[type="email"],[type="file"],[type="submit"] {
