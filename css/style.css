@@ -474,6 +474,9 @@ nav img {
   width: 100%;
   border: none;
 }
+.form-hide {
+    display: none;
+}
 .form-text {
     color: #fff;
     font-family: 'Tinos', sans-serif;
